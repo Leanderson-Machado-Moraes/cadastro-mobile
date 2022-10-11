@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/secretaria" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/purple"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:text="Listagem de usuários"
+            android:textColor="@color/black"
+            android:textSize="45dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="150dp"
+        android:layout_below="@+id/linear"
+        android:text="Registros: 1/10"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/txtNomeLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:layout_marginTop="5dp"
+        android:text="Nome:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtNomeLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeLista"
+        android:layout_marginTop="5dp"
+        android:hint="[NOME] "
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtEnderecoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNomeLista"
+        android:layout_marginTop="5dp"
+        android:text="Endereço:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtEnderecoLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEnderecoLista"
+        android:layout_marginTop="5dp"
+        android:hint="[ENDEREÇO]"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txtTelefoneLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtEnderecoLista"
+        android:layout_marginTop="5dp"
+        android:text="Telefone:"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtTelefoneLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTelefoneLista"
+        android:layout_marginTop="5dp"
+        android:hint="[TELEFONE]"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTelefoneLista"
+        android:layout_marginLeft="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Anterior"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnProximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Próximo"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFechar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2"
+        android:layout_marginLeft="120dp"
+        android:layout_marginRight="150dp"
+        android:text="Fechar" />
+
+
+</RelativeLayout>
